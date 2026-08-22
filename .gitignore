@@ -1,0 +1,43 @@
+# Private working projects (keep /创作项目_example/ tracked)
+/创作项目/
+
+# Generated outputs and local scratch space
+/output/
+/outputs/
+/temp/
+/tmp/
+
+# Environment and local configuration
+.env
+.env.*
+!.env.example
+*.local
+
+# IDEs and editors
+.idea/
+.vscode/
+*.iml
+*.swp
+*.swo
+*~
+
+# Operating system files
+.DS_Store
+Thumbs.db
+Desktop.ini
+
+# Logs and temporary backups
+*.log
+*.tmp
+*.temp
+*.bak
+
+# Common dependency and cache directories
+node_modules/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.cache/
+

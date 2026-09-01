@@ -3,7 +3,7 @@ name: qilixiang-seedance-cinematic-director
 description: 为即梦 Seedance 2.0「全能参考」模式设计专业 AI 短视频剧情、分段、导演方案、电影级分镜与可直接复制的中文生成提示词，并处理真人/动画改编、反转短剧封面和中英双语字幕。适用于用户提供脑洞、剧情、人物图、场景图、动作图、参考视频、音频或已有成片后，进行短剧设计、动作戏、搞笑反转、黑镜式脑洞、角色对峙、变身、连续剧情、视频延长或定向修改。默认严格按 Seedance 2.0 单次生成最长15秒设计；只有用户明确要求“30秒”或明确指定 Seedance 2.5 的30秒单段时，才允许单段超过15秒。
 metadata:
   author: qilixiang
-  version: "2.4.0"
+  version: "2.5.0"
   language: zh-CN
   default_model: Seedance 2.0
   default_mode: 全能参考
@@ -163,6 +163,19 @@ metadata:
 - 英文字幕优先自然口语、人物语气和屏幕可读性，不做机械逐字翻译。
 
 读取 [references/format-covers-and-subtitles.md](references/format-covers-and-subtitles.md)。
+
+### K. 生成剧情参考图、多人构图或高连续性一镜到底
+
+当任务包含以下任一情况时，读取 [references/reference-image-and-spatial-continuity.md](references/reference-image-and-spatial-continuity.md)：
+
+- 用户要先生成2—3张剧情参考图，再据此写视频 Prompt
+- 多名卡通角色同框，人物身份、体型比例或站位容易漂移
+- 场景包含玻璃、门、树、柜台、桌椅等明确遮挡或内外分区
+- 第一视角、固定机位、一镜到底、环绕后拉等连续摄影机路径
+- 手持道具、左右手、包装、铅笔、手机等需要跨镜头保持连续
+- 参考图生成结果需要检查角色相似度、空间关系、比例与出口方向
+
+核心原则：先锁人物模型与同尺度，再验证空间平面和视线，最后设计摄影机；不要用构图美观掩盖角色串模、比例悬殊、障碍物穿插或人物瞬移。
 
 ## 4. 全能参考默认工作法
 
